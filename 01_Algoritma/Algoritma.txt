@@ -1,0 +1,30 @@
+Çay dolduran bir sistemi yazın .
+
+1. Başla
+2. Malzemeleri belirle
+3. Mutfağa git
+4. Çaydanlığı al
+5. Su koy
+6. Ocağı aç
+8. Çaydanlığı ocağa koy
+9. Su kaynadı mı ? 10. adıma git  değil ise bekle ve 9. u kontrol et
+10. Çaydanlığa çay koy
+11. Çay demlendi mi ? Evet ise 12. adıma git Değil ise bekle 11. kontrol et
+12. Servis et
+13. Bitir
+
+
+Fındık kreması sürülü ekmek yemek istiyorum.
+
+1. Başla
+2. Ekmeği al
+4. Bıçağı al
+3. Ekmeği bıçak kullanarak 2 parçaya ayır
+4. Fındık kreması olan kavanozu aç
+5. Bıçağın kesme bölümü ile kavanozdan az mıktarda fındık kreması al
+6. 3. adımda iki parçaya ayrılan ekmeklerden birini al ve yumusak olan yüzeyinin herhangi birine sür
+7. Diğer parçayı yumusak olan taraf diğer dilimin yumusak olan yüzeyine kapat
+8. Bıçağı bırak
+9. Kavanozu kapat
+10. Ekmeği ye
+11. Bitir
