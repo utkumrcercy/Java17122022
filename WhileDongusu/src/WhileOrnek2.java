@@ -18,7 +18,7 @@ public class WhileOrnek2 {
         int toplam = 0;
 
         while (0 < sayi) {
-            toplam += sayi;
+            toplam += sayi; // toplam = toplam +sayi
             --sayi;
         }
 
