@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!--        Sunucu ve Driver bilgilerimizi giriyoruz-->
+
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://kandula.db.elephantsql.com:5432/nnpdtyax</property>
+        <property name="hibernate.connection.username">nnpdtyax</property>
+        <property name="hibernate.connection.password">GHFZB2IN3K3U4Dhfb1Jonxv5deDAvazQ</property>
+
+        <!--        Hibernate için özel ayarları giriyoruz-->
+
+        <property name="connection.pool_size">10</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="connection.autocommit">true</property>
+
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="packagesToScan">com.mehmetnuri.entity</property>
+        <mapping package="com.mehmetnuri.entity"  />
+
+        <!--        En önemli nokta entityleri burda tanımlamamız lazım !!!-->
+<!--        <mapping class="com.mehmetnuri.entity.*" />-->
+
+<!--        <mapping class="com.mehmetnuri.entity.Ders" />-->
+
+        <mapping class="com.mehmetnuri.entity.Kisiler" />
+        <mapping class="com.mehmetnuri.entity.Telefon" />
+
+    </session-factory>
+</hibernate-configuration>
