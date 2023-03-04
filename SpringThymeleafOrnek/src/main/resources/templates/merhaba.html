@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Merhaba</title>
+</head>
+<body>
+
+
+<a th:href="@{'/hakkimda'}">Hakkımda</a>
+
+<h1>Merhaba Spring Web MVC</h1>
+
+<h1 th:text="${mesaj}"></h1>
+<h2 th:text="${kullaniciAdi}"></h2>
+
+<div th:if="${girisDurumu == true}">
+    <p>Kullanıcı Giriş Yaptı</p>
+</div>
+
+<div th:if="${girisDurumu == false}">
+    <p>Kullanıcı Giriş Yapmadı !</p>
+</div>
+
+<p>Kullanıcı Sayısı: </p><p th:text="${kullanicilar.size()}"></p>
+<ul th:each="kullanici: ${kullanicilar}">
+
+    <li>
+        [[ ${kullanici}  ]]
+    </li>
+
+</ul>
+
+</body>
+</html>
