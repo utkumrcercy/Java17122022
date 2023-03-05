@@ -1,0 +1,69 @@
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link " th:href="@{'/'}">
+        <i class="bi bi-grid"></i>
+        <span>Anasayfa</span>
+      </a>
+    </li><!-- End Dashboard Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Kullanıcı İşlemleri</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a th:href="@{'/kullanicilar/listele'}">
+            <i class="bi bi-circle"></i><span>Listele</span>
+          </a>
+        </li>
+        <li>
+          <a th:href="@{'/kullanicilar/ekle'}">
+            <i class="bi bi-circle"></i><span>Ekle</span>
+          </a>
+        </li>
+
+      </ul>
+    </li><!-- End Components Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-journal-text"></i><span>Tanımlamalar</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a th:href="@{'/tanimlamalar/okul/ekle'}">
+            <i class="bi bi-circle"></i><span>Okul</span>
+          </a>
+        </li>
+        <li>
+          <a th:href="@{'/tanimlamalar/fakulte/ekle'}">
+            <i class="bi bi-circle"></i><span>Fakülte</span>
+          </a>
+        </li>
+        <li>
+          <a th:href="@{'/tanimlamalar/sinif/ekle'}">
+            <i class="bi bi-circle"></i><span>Sınıf</span>
+          </a>
+        </li>
+        <li>
+          <a th:href="@{'/tanimlamalar/bolum/ekle'}">
+            <i class="bi bi-circle"></i><span>Bölüm</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Forms Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" th:href="@{'/iletisim/'}">
+        <i class="bi bi-envelope"></i>
+        <span>İletişim</span>
+      </a>
+    </li><!-- End Contact Page Nav -->
+
+  </ul>
+
+</aside><!-- End Sidebar-->
