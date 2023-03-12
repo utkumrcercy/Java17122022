@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "32c87a22-90f9-491d-a328-61328ad96927",
+		"name": "Universite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fakülte",
+			"item": [
+				{
+					"name": "Butun Fakülteleri Getir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}fakulte/findAll",
+							"host": [
+								"{{API_URL}}fakulte"
+							],
+							"path": [
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id Ye Göre Bul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}fakulte/findById/1",
+							"host": [
+								"{{API_URL}}fakulte"
+							],
+							"path": [
+								"findById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fakulte Kaydet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ad\": \"Mühendislik\",\r\n    \"durum\": \"AKTIF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}fakulte/save",
+							"host": [
+								"{{API_URL}}fakulte"
+							],
+							"path": [
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fakülte Sil",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}fakulte/delete/1",
+							"host": [
+								"{{API_URL}}fakulte"
+							],
+							"path": [
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bölüm",
+			"item": [
+				{
+					"name": "Bütün Bölümleri Getir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}bolum/findAll",
+							"host": [
+								"{{API_URL}}bolum"
+							],
+							"path": [
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id Ye Göre Bölüm Bul",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}bolum/ozelBul/1",
+							"host": [
+								"{{API_URL}}bolum"
+							],
+							"path": [
+								"ozelBul",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bölüm Kaydet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ad\": \"Yazılım Mühendisliği\",\r\n    \"durum\": \"AKTIF\",\r\n    \"fakulte\": {\r\n        \"id\": 2,\r\n        \"ad\": \"Mühendislik\",\r\n        \"durum\": \"AKTIF\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}bolum/save",
+							"host": [
+								"{{API_URL}}bolum"
+							],
+							"path": [
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bölüm Sil",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}bolum/delete/2",
+							"host": [
+								"{{API_URL}}bolum"
+							],
+							"path": [
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
